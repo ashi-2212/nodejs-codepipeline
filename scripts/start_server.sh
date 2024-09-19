@@ -11,7 +11,7 @@ $(aws ecr get-login --no-include-email --region eu-north-1)
 docker pull 339712999129.dkr.ecr.eu-north-1.amazonaws.com/node-app:latest
 
 # Run the new container
-docker run -d -p 80:3000 --name node-app 339712999129.dkr.ecr.eu-north-1.amazonaws.com/node-app:latest
+docker run -d -p 3000:3000 --name node-app 339712999129.dkr.ecr.eu-north-1.amazonaws.com/node-app:latest
 
 
 
